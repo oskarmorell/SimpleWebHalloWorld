@@ -22,5 +22,11 @@ namespace SimpleWebHalloWorld
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        public int FakeMethod(int i)
+        {
+            return i++;
+        }
     }
+
 }
