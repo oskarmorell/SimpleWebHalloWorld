@@ -4,7 +4,7 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-COPY . ./
+COPY . /SimpleWebHalloWorld
 RUN dotnet publish -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
